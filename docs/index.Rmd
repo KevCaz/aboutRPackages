@@ -1,0 +1,125 @@
+---
+title: "R packages"
+date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
+author: 'Kevin Cazelles, post-doc, McCann Lab, [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/KevCaz/mapsWithR)'
+output:
+  ioslides_presentation:
+    incremental: true
+    widescreen: true
+    includes:
+      in_header: kcheader.html
+      #logo: ./img/logo.png
+---
+
+
+
+# R / RStudio / CRAN
+
+## R / RStudio / CRAN
+
+R: https://www.r-project.org/
+
+RStudio: https://www.rstudio.com/
+
+CRAN: https://cran.r-project.org/mirrors.html
+
+BioConductor: http://www.bioconductor.org/
+
+More: https://github.com/eddelbuettel/drat
+
+
+# What is an R package?
+
+## Definition
+
+Quite tricky to answer, I would say ...
+
+
+
+## Examples
+
+- [png](https://cran.r-project.org/web/packages/png/index.html)
+
+- [knitr](https://cran.r-project.org/web/packages/knitr/index.html): 188 functions
+
+- [vegan](https://cran.r-project.org/web/packages/vegan/index.html): 103 functions (+425 non-exported function)
+
+- [trump](https://github.com/romainfrancois/trump)
+
+
+## Many packages
+
+- http://blog.revolutionanalytics.com/2017/01/cran-10000.html
+
+- 2012: article by Kurt Hornik (CRAN maintainer) http://www.stat.tugraz.at/AJS/ausg121/121Hornik.pdf
+
+
+
+# Why would you create an R package?
+
+
+# Action
+
+## Create your R package without RStudio
+
+```
+package.skeleton()
+```
+
+https://cran.r-project.org/doc/manuals/r-release/R-exts.html
+
+
+## Create your R package with RStudio
+
+https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio
+
+
+## Package architecture
+
+- DESCRIPTION: meta data of your package (name, version, ...)
+- NAMESPACE: import / export / dynlab
+- R: R functions
+- man: documentation (`.Rd` files)
+
+## Package architecture
+
+- `data`: R objects stored as RData (`.rda`)
+- `src`: file in other programming language
+- `test`: tests for you package
+- `inst`: CITATION / non-R scripts / external-data...
+- `.Rbuildignore`
+- `.Rinstignore`
+
+# So
+
+Must read: http://r-pkgs.had.co.nz/
+
+
+
+
+# Next week
+
+## overview
+
+- http://r-pkgs.had.co.nz/
+- Devtools
+- Roxygen
+- Testhat
+- More
+
+
+
+<!-- ## cool
+
+<div class="centered">
+This text is centered.
+</div>
+
+## cool2
+
+<div class="columns-2">
+
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+</div> -->
