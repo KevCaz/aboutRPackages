@@ -25,14 +25,18 @@ CRAN: https://cran.r-project.org/mirrors.html
 
 BioConductor: http://www.bioconductor.org/
 
+MetaCRAN: https://www.r-pkg.org/
+
 More: https://github.com/eddelbuettel/drat
+
+
 
 
 # What is an R package?
 
 ## Definition
 
-Quite tricky to answer, I would say ...
+Quite tricky to answer, I would say *to be answered*
 
 
 
@@ -56,6 +60,7 @@ Quite tricky to answer, I would say ...
 
 
 # Why would you create an R package?
+
 
 
 # Action
@@ -84,6 +89,7 @@ https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with
 ## Package architecture
 
 - `data`: R objects stored as RData (`.rda`)
+- `vignettes`: documentation
 - `src`: file in other programming language
 - `test`: tests for you package
 - `inst`: CITATION / non-R scripts / external-data...
