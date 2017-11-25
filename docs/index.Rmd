@@ -1,7 +1,7 @@
 ---
 title: "R packages"
 date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
-author: 'Kevin Cazelles, post-doc, McCann Lab, [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/KevCaz/mapsWithR)'
+author: 'Kevin Cazelles, post-doc, McCann Lab, [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/KevCaz/aboutRPackages)'
 output:
   ioslides_presentation:
     incremental: true
