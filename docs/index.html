@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-11-23" />
+  <meta name="date" content="2017-11-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3109,7 +3109,7 @@ if (document.readyState !== "loading" &&
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">23 November 2017</p>
+            <p style="margin-top: 6px; margin-left: -2px;">25 November 2017</p>
           </hgroup>
   </slide>
 
@@ -3133,7 +3133,11 @@ if (document.readyState !== "loading" &&
 
 </article></slide><slide class=""><hgroup><h2>Definition</h2></hgroup><article  id="definition">
 
-<p>Quite tricky to answer, I would say <em>to be answered</em></p>
+<p>Quite tricky to answer! I would say:</p>
+
+<blockquote>
+<p>a set of files that passes the <code>R CMD install</code></p>
+</blockquote>
 
 </article></slide><slide class=""><hgroup><h2>Examples</h2></hgroup><article  id="examples">
 
@@ -3159,19 +3163,25 @@ if (document.readyState !== "loading" &&
 
 <pre >package.skeleton()</pre>
 
+<p><br></p>
+
 <p><a href='https://cran.r-project.org/doc/manuals/r-release/R-exts.html' title=''>https://cran.r-project.org/doc/manuals/r-release/R-exts.html</a></p>
 
 </article></slide><slide class=""><hgroup><h2>Create your R package with RStudio</h2></hgroup><article  id="create-your-r-package-with-rstudio">
 
 <p><a href='https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio' title=''>https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio</a></p>
 
+<p><br></p>
+
+<p>Must read: <a href='http://r-pkgs.had.co.nz/' title=''>http://r-pkgs.had.co.nz/</a></p>
+
 </article></slide><slide class=""><hgroup><h2>Package architecture</h2></hgroup><article  id="package-architecture">
 
 <ul class = 'build'>
-<li>DESCRIPTION: meta data of your package (name, version, …)</li>
-<li>NAMESPACE: import / export / dynlab</li>
-<li>R: R functions</li>
-<li>man: documentation (<code>.Rd</code> files)</li>
+<li><code>DESCRIPTION</code>: meta data of your package (name, version, …)</li>
+<li><code>NAMESPACE</code>: import / export / dynlab</li>
+<li><code>R</code>: R functions</li>
+<li><code>man</code>: documentation (<code>.Rd</code> files)</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Package architecture</h2></hgroup><article  id="package-architecture-1">
@@ -3186,20 +3196,23 @@ if (document.readyState !== "loading" &&
 <li><code>.Rinstignore</code></li>
 </ul>
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>So</h2></hgroup><article  id="so">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Week 2</h2></hgroup><article  id="week-2">
 
-<p>Must read: <a href='http://r-pkgs.had.co.nz/' title=''>http://r-pkgs.had.co.nz/</a></p>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Next week</h2></hgroup><article  id="next-week">
-
-</article></slide><slide class=""><hgroup><h2>overview</h2></hgroup><article  id="overview">
+</article></slide><slide class=""><hgroup><h2>Hadley’s packages for packages development</h2></hgroup><article  id="hadleys-packages-for-packages-development">
 
 <ul class = 'build'>
 <li><a href='http://r-pkgs.had.co.nz/' title=''>http://r-pkgs.had.co.nz/</a></li>
 <li>Devtools</li>
 <li>Roxygen</li>
 <li>Testhat</li>
-<li>More</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Additional tools to improve</h2></hgroup><article  id="additional-tools-to-improve">
+
+<ul class = 'build'>
+<li>Github / Bitbucket</li>
+<li>Travis / Appveyor</li>
+<li>Code coverage</li>
 </ul>
 
 <!-- ## cool

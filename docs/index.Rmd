@@ -36,7 +36,9 @@ More: https://github.com/eddelbuettel/drat
 
 ## Definition
 
-Quite tricky to answer, I would say *to be answered*
+Quite tricky to answer! I would say:
+
+> a set of files that passes the `R CMD install`
 
 
 
@@ -63,6 +65,7 @@ Quite tricky to answer, I would say *to be answered*
 
 
 
+
 # Action
 
 ## Create your R package without RStudio
@@ -71,6 +74,8 @@ Quite tricky to answer, I would say *to be answered*
 package.skeleton()
 ```
 
+<br>
+
 https://cran.r-project.org/doc/manuals/r-release/R-exts.html
 
 
@@ -78,13 +83,17 @@ https://cran.r-project.org/doc/manuals/r-release/R-exts.html
 
 https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio
 
+<br>
+
+Must read: http://r-pkgs.had.co.nz/
+
 
 ## Package architecture
 
-- DESCRIPTION: meta data of your package (name, version, ...)
-- NAMESPACE: import / export / dynlab
-- R: R functions
-- man: documentation (`.Rd` files)
+- `DESCRIPTION`: meta data of your package (name, version, ...)
+- `NAMESPACE`: import / export / dynlab
+- `R`: R functions
+- `man`: documentation (`.Rd` files)
 
 ## Package architecture
 
@@ -96,22 +105,25 @@ https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with
 - `.Rbuildignore`
 - `.Rinstignore`
 
-# So
-
-Must read: http://r-pkgs.had.co.nz/
 
 
+# Week 2
 
-
-# Next week
-
-## overview
+## Hadley's packages for packages development
 
 - http://r-pkgs.had.co.nz/
 - Devtools
 - Roxygen
 - Testhat
-- More
+
+
+## Additional tools to improve
+
+- Github / Bitbucket
+- Travis / Appveyor
+- Code coverage
+
+
 
 
 
