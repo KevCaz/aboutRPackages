@@ -3205,15 +3205,24 @@ if (document.readyState !== "loading" &&
 <li><code>NAMESPACE</code>: import / export / dynlab</li>
 <li><code>R</code>: R functions</li>
 <li><code>man</code>: documentation (<code>.Rd</code> files)</li>
+<li><code>test</code>: tests (<code>.R</code> files)</li>
+<li><code>data</code>: data (<code>.Rda</code> files)</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Hadley’s packages for package development</h2></hgroup><article  id="hadleys-packages-for-package-development">
+</article></slide><slide class=""><hgroup><h2>Hadley’s package collection for package development</h2></hgroup><article  id="hadleys-package-collection-for-package-development">
 
 <ul class = 'build'>
-<li><a href='http://r-pkgs.had.co.nz/' title=''>http://r-pkgs.had.co.nz/</a></li>
+<li><a href='http://r-pkgs.had.co.nz/' title=''>R packages</a></li>
 <li>Devtools: <code>install.packages(&#39;devtools&#39;)</code></li>
-<li>Roxygen</li>
-<li>Testhat</li>
+<li><ul class = 'build'>
+<li>Roxygen: to document package</li>
+</ul></li>
+<li><ul class = 'build'>
+<li>Testhat: to test your package</li>
+</ul></li>
+<li><ul class = 'build'>
+<li>Rmarkdown: to build vignettes</li>
+</ul></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Basic workflow with <code>devtools</code></h2></hgroup><article  id="basic-workflow-with-devtools">
@@ -3227,8 +3236,31 @@ if (document.readyState !== "loading" &&
 </article></slide><slide class=""><hgroup><h2>Additional tools to improve your workflow</h2></hgroup><article  id="additional-tools-to-improve-your-workflow">
 
 <ul class = 'build'>
-<li><a href='https://github.com/' title=''>Github</a> / <a href='https://bitbucket.org/' title=''>Bitbucket</a></li>
-<li>Travis / Appveyor / Code coverage</li>
+<li>Web-based version control repository hosting service:
+
+<ul class = 'build'>
+<li><a href='https://github.com/' title=''>Github</a></li>
+<li><a href='https://bitbucket.org/' title=''>Bitbucket</a></li>
+</ul></li>
+<li>Continuous Integration
+
+<ul class = 'build'>
+<li><a href='https://travis-ci.org/' title=''>Travis</a></li>
+<li><a href='https://www.appveyor.com/' title=''>Appveyor</a></li>
+</ul></li>
+<li>Code quality (<em>i.e.</em> code coverage)
+
+<ul class = 'build'>
+<li><a href='https://codecov.io/gh' title=''>Codecov</a></li>
+<li><a href='https://codeclimate.com/' title=''>codeclimate</a></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Versioning and Licence</h2></hgroup><article  id="versioning-and-licence">
+
+<ul class = 'build'>
+<li><a href='https://semver.org/' title=''>Semantic versioning</a></li>
+<li><a href='https://choosealicense.com/' title=''>Choose a license</a></li>
 </ul>
 
 <!-- ## cool
