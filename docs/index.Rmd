@@ -109,19 +109,40 @@ Must read: http://r-pkgs.had.co.nz/
 
 # Week 2
 
+## Remember
+
+- `DESCRIPTION`: meta data of your package (name, version, ...)
+- `NAMESPACE`: import / export / dynlab
+- `R`: R functions
+- `man`: documentation (`.Rd` files)
+
+
 ## Hadley's packages for packages development
 
 - http://r-pkgs.had.co.nz/
-- Devtools
+- Devtools: `install.packages('devtools')`
+- Roxygen
+- Testhat
+
+## Hadley's packages for packages development
+
+- http://r-pkgs.had.co.nz/
+- Devtools: `install.packages('devtools')`
 - Roxygen
 - Testhat
 
 
-## Additional tools to improve
+## Basic workflow with `devtools`
 
-- Github / Bitbucket
-- Travis / Appveyor
-- Code coverage
+- create a function `load_all()`
+- document the function `document()`
+- test the function `test()`
+
+
+## Additional tools to improve your workflow
+
+- [Github](https://github.com/) / [Bitbucket](https://bitbucket.org/)
+- Travis / Appveyor / Code coverage
 
 
 
