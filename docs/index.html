@@ -3196,7 +3196,7 @@ if (document.readyState !== "loading" &&
 <li><code>.Rinstignore</code></li>
 </ul>
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Week 2</h2></hgroup><article  id="week-2">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Session 2</h2></hgroup><article  id="session-2">
 
 </article></slide><slide class=""><hgroup><h2>Remember</h2></hgroup><article  id="remember">
 
@@ -3214,15 +3214,9 @@ if (document.readyState !== "loading" &&
 <ul class = 'build'>
 <li><a href='http://r-pkgs.had.co.nz/' title=''>R packages</a></li>
 <li>Devtools: <code>install.packages(&#39;devtools&#39;)</code></li>
-<li><ul class = 'build'>
 <li>Roxygen: to document package</li>
-</ul></li>
-<li><ul class = 'build'>
 <li>Testhat: to test your package</li>
-</ul></li>
-<li><ul class = 'build'>
 <li>Rmarkdown: to build vignettes</li>
-</ul></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Basic workflow with <code>devtools</code></h2></hgroup><article  id="basic-workflow-with-devtools">
@@ -3232,6 +3226,27 @@ if (document.readyState !== "loading" &&
 <li>document the function <code>document()</code></li>
 <li>test the function <code>test()</code></li>
 </ul>
+
+</article></slide><slide class=""><hgroup><h2><code>load_all()</code></h2></hgroup><article  id="load_all">
+
+<p>First, create a function. For instance I’ve created:</p>
+
+<pre class = 'prettyprint lang-r'>getDigits &lt;- function(x, collapse = NULL) {
+    out &lt;- strsplit(x, split = &quot;\\D&quot;) %&gt;% lapply(function(x) x[x != &quot;&quot;])
+    if (!is.null(collapse))
+        out &lt;- lapply(out, paste, collapse = collapse)
+    out
+}</pre>
+
+<p>in <code>R/getDigits.R</code> file.</p>
+
+</article></slide><slide class=""><hgroup><h2><code>load_all()</code></h2></hgroup><article  id="load_all-1">
+
+<video width="90%" controls>
+
+<source src="img/load_all.webm" type="video/webm">
+
+<p>Your browser does not support the video tag. </video></p>
 
 </article></slide><slide class=""><hgroup><h2>Additional tools to improve your workflow</h2></hgroup><article  id="additional-tools-to-improve-your-workflow">
 
@@ -3252,7 +3267,7 @@ if (document.readyState !== "loading" &&
 
 <ul class = 'build'>
 <li><a href='https://codecov.io/gh' title=''>Codecov</a></li>
-<li><a href='https://codeclimate.com/' title=''>codeclimate</a></li>
+<li><a href='https://codeclimate.com/' title=''>Codeclimate</a></li>
 </ul></li>
 </ul>
 

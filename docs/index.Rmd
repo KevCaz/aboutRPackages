@@ -107,7 +107,7 @@ Must read: http://r-pkgs.had.co.nz/
 
 
 
-# Week 2
+# Session 2
 
 ## Remember
 
@@ -123,9 +123,9 @@ Must read: http://r-pkgs.had.co.nz/
 
 - [R packages](http://r-pkgs.had.co.nz/)
 - Devtools: `install.packages('devtools')`
-- + Roxygen: to document package
-- + Testhat: to test your package
-- + Rmarkdown: to build vignettes
+- Roxygen: to document package
+- Testhat: to test your package
+- Rmarkdown: to build vignettes
 
 
 
@@ -135,6 +135,27 @@ Must read: http://r-pkgs.had.co.nz/
 - document the function `document()`
 - test the function `test()`
 
+## `load_all()`
+
+First, create a function. For instance I've created:
+
+```{r, eval=FALSE}
+getDigits <- function(x, collapse = NULL) {
+    out <- strsplit(x, split = "\\D") %>% lapply(function(x) x[x != ""])
+    if (!is.null(collapse))
+        out <- lapply(out, paste, collapse = collapse)
+    out
+}
+```
+
+in `R/getDigits.R` file.
+
+## `load_all()`
+
+<video width="90%" controls>
+ <source src="img/load_all.webm" type="video/webm">
+ Your browser does not support the video tag.
+</video>
 
 ## Additional tools to improve your workflow
 
@@ -148,7 +169,7 @@ Must read: http://r-pkgs.had.co.nz/
 
 - Code quality (*i.e.* code coverage)
   - [Codecov](https://codecov.io/gh)
-  - [codeclimate](https://codeclimate.com/)
+  - [Codeclimate](https://codeclimate.com/)
 
 
 ## Versioning and Licence
