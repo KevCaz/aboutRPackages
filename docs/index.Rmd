@@ -117,19 +117,13 @@ Must read: http://r-pkgs.had.co.nz/
 - `man`: documentation (`.Rd` files)
 
 
-## Hadley's packages for packages development
+## Hadley's packages for package development
 
 - http://r-pkgs.had.co.nz/
 - Devtools: `install.packages('devtools')`
 - Roxygen
 - Testhat
 
-## Hadley's packages for packages development
-
-- http://r-pkgs.had.co.nz/
-- Devtools: `install.packages('devtools')`
-- Roxygen
-- Testhat
 
 
 ## Basic workflow with `devtools`
