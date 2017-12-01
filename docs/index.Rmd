@@ -115,14 +115,17 @@ Must read: http://r-pkgs.had.co.nz/
 - `NAMESPACE`: import / export / dynlab
 - `R`: R functions
 - `man`: documentation (`.Rd` files)
+- `test`: tests (`.R` files)
+- `data`: data (`.Rda` files)
 
 
-## Hadley's packages for package development
+## Hadley's package collection for package development
 
-- http://r-pkgs.had.co.nz/
+- [R packages](http://r-pkgs.had.co.nz/)
 - Devtools: `install.packages('devtools')`
-- Roxygen
-- Testhat
+- + Roxygen: to document package
+- + Testhat: to test your package
+- + Rmarkdown: to build vignettes
 
 
 
@@ -135,9 +138,23 @@ Must read: http://r-pkgs.had.co.nz/
 
 ## Additional tools to improve your workflow
 
-- [Github](https://github.com/) / [Bitbucket](https://bitbucket.org/)
-- Travis / Appveyor / Code coverage
+- Web-based version control repository hosting service:
+  - [Github](https://github.com/)
+  - [Bitbucket](https://bitbucket.org/)
 
+- Continuous Integration
+  - [Travis](https://travis-ci.org/)
+  - [Appveyor](https://www.appveyor.com/)
+
+- Code quality (*i.e.* code coverage)
+  - [Codecov](https://codecov.io/gh)
+  - [codeclimate](https://codeclimate.com/)
+
+
+## Versioning and Licence
+
+- [Semantic versioning](https://semver.org/)
+- [Choose a license](https://choosealicense.com/)
 
 
 
