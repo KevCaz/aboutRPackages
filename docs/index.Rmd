@@ -27,9 +27,13 @@ BioConductor: http://www.bioconductor.org/
 
 MetaCRAN: https://www.r-pkg.org/
 
+R Package Documentation: https://rdrr.io/
+
 More: https://github.com/eddelbuettel/drat
 
+## R Package Documentation
 
+<img width=70% src="img/rdrr_10012018.png"></img>
 
 
 # What is an R package?
@@ -178,6 +182,16 @@ in `R/getDigits.R` file.
 - [Choose a license](https://choosealicense.com/)
 
 
+
+# Extra notes
+
+## Imports / Suggests and Enhances
+
+https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Package-Dependencies
+
+The ‘Suggests’ field uses the same syntax as ‘Depends’ and lists packages that are not necessarily needed. This includes packages used only in examples, tests or vignettes (see Writing package vignettes), and packages loaded in the body of functions. E.g., suppose an example11 from package foo uses a dataset from package bar. Then it is not necessary to have bar use foo unless one wants to execute all the examples/tests/vignettes: it is useful to have bar, but not necessary. Version requirements can be specified but should be checked by the code which uses the package.
+
+Finally, the ‘Enhances’ field lists packages “enhanced” by the package at hand, e.g., by providing methods for classes from these packages, or ways to handle objects from these packages (so several packages have ‘Enhances: chron’ because they can handle datetime objects from chron even though they prefer R’s native datetime functions). Version requirements can be specified, but are currently not used. Such packages cannot be required to check the package: any tests which use them must be conditional on the presence of the package. (If your tests use e.g. a dataset from another package it should be in ‘Suggests’ and not ‘Enhances’.)
 
 
 <!-- ## cool

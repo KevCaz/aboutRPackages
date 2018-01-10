@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-12-01" />
+  <meta name="date" content="2018-01-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3109,7 +3109,7 @@ if (document.readyState !== "loading" &&
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">01 December 2017</p>
+            <p style="margin-top: 6px; margin-left: -2px;">10 January 2018</p>
           </hgroup>
   </slide>
 
@@ -3127,7 +3127,13 @@ if (document.readyState !== "loading" &&
 
 <p>MetaCRAN: <a href='https://www.r-pkg.org/' title=''>https://www.r-pkg.org/</a></p>
 
+<p>R Package Documentation: <a href='https://rdrr.io/' title=''>https://rdrr.io/</a></p>
+
 <p>More: <a href='https://github.com/eddelbuettel/drat' title=''>https://github.com/eddelbuettel/drat</a></p>
+
+</article></slide><slide class=""><hgroup><h2>R Package Documentation</h2></hgroup><article  id="r-package-documentation">
+
+<p><img width=70% src="img/rdrr_10012018.png"></img></p>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>What is an R package?</h2></hgroup><article  id="what-is-an-r-package">
 
@@ -3277,6 +3283,16 @@ if (document.readyState !== "loading" &&
 <li><a href='https://semver.org/' title=''>Semantic versioning</a></li>
 <li><a href='https://choosealicense.com/' title=''>Choose a license</a></li>
 </ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Extra notes</h2></hgroup><article  id="extra-notes">
+
+</article></slide><slide class=""><hgroup><h2>Imports / Suggests and Enhances</h2></hgroup><article  id="imports-suggests-and-enhances">
+
+<p><a href='https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Package-Dependencies' title=''>https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Package-Dependencies</a></p>
+
+<p>The &lsquo;Suggests&rsquo; field uses the same syntax as &lsquo;Depends&rsquo; and lists packages that are not necessarily needed. This includes packages used only in examples, tests or vignettes (see Writing package vignettes), and packages loaded in the body of functions. E.g., suppose an example11 from package foo uses a dataset from package bar. Then it is not necessary to have bar use foo unless one wants to execute all the examples/tests/vignettes: it is useful to have bar, but not necessary. Version requirements can be specified but should be checked by the code which uses the package.</p>
+
+<p>Finally, the &lsquo;Enhances&rsquo; field lists packages &ldquo;enhanced&rdquo; by the package at hand, e.g., by providing methods for classes from these packages, or ways to handle objects from these packages (so several packages have &lsquo;Enhances: chron&rsquo; because they can handle datetime objects from chron even though they prefer R’s native datetime functions). Version requirements can be specified, but are currently not used. Such packages cannot be required to check the package: any tests which use them must be conditional on the presence of the package. (If your tests use e.g. a dataset from another package it should be in &lsquo;Suggests&rsquo; and not &lsquo;Enhances&rsquo;.)</p>
 
 <!-- ## cool
 
